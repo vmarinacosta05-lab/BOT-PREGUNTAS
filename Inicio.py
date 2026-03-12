@@ -58,8 +58,8 @@ if st.button("Calcular TF-IDF y buscar respuesta"):
             index=[f"Doc {i+1}" for i in range(len(documents))]
         )
 
-        st.write("### Matriz TF-IDF (stems)")
-        st.dataframe(df_tfidf.round(3))
+        ##st.write("### Matriz TF-IDF (stems)")
+        ##st.dataframe(df_tfidf.round(3))
 
         # Vector de la pregunta
         question_vec = vectorizer.transform([question])
