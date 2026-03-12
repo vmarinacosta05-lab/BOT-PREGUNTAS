@@ -83,8 +83,8 @@ if st.button("Calcular TF-IDF y buscar respuesta"):
             "Texto": documents,
             "Similitud": similarities
         })
-        st.write("### Puntajes de similitud (ordenados)")
-        st.dataframe(sim_df.sort_values("Similitud", ascending=False))
+        ##st.write("### Puntajes de similitud (ordenados)")
+        ##st.dataframe(sim_df.sort_values("Similitud", ascending=False))
 
         # Mostrar coincidencias de stems
         vocab = vectorizer.get_feature_names_out()
